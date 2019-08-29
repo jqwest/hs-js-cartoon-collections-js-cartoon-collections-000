@@ -22,6 +22,7 @@ function summonCaptainPlanet(planeteerCalls) {
 // reutrn value as an array
 		var calls = ["apple", "banana", "orange"];
 		return calls.map(function(ele) {
+			//return element to uppercae and and an !
 			return ele.toUpperCase() + "!";
 		});
 	}
