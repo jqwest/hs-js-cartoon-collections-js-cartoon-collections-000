@@ -53,11 +53,12 @@ function findTheCheese(foods) {
 var cheese = ["cheddar", "gouda", "camembert"]
 var ingredients = ["garlic", "cheddar", "bread"];
 	 for(var i = 0; i < foods.length; i++) {
-//created for loop
+// if foods are equal value and equal type return cheese
 if(foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert') {
       return foods[i];
        }
      }
+		 // if foods are not equal value or equal type return no cheese
      if(foods !== 'cheddar' || foods !== 'gouda' || foods !== 'camembert') {
        return 'no cheese!';
      }
