@@ -51,16 +51,46 @@ function findTheCheese(foods) {
 // loop through strings
 // retrun the first stirng that is a cheese
 
-var cheese = ["cheddar", "gouda", "camembert"]
+var cheese = ["cheddar", "gouda", "camembert", "swiss"]
 var ingredients = ["garlic", "cheddar", "bread"];
 	 for(var i = 0; i < foods.length; i++) {
 // if foods are equal value and equal type return cheese
-if(foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert') {
+if(foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert' || foods [i] === 'swiss') {
       return foods[i];
        }
      }
 		 // if foods are not equal value or equal type return no cheese
-     if(foods !== 'cheddar' || foods !== 'gouda' || foods !== 'camembert') {
+     if(foods !== 'cheddar' || foods !== 'gouda' || foods !== 'camembert' || 'foods !== swiss') {
        return 'no cheese!';
      }
  }
+
+
+
+function wordsThatStartWithB(words){
+	// need to return words that start with b
+	// sort through each array
+	// let words = ["bob", "sally", "joe"]
+  //  words[0] === "bob"
+	// "bob".startsWith("b")
+	// does the first element of words does it start with letter b
+
+	
+	for(var i=0; i < words.length; i++);
+	// if words with b are found output
+	// if no words are found outupt also []
+	if(words[i].startsWith("b"));
+	//return an array all the words that start with b
+var newWords = []
+
+
+	return newWords
+
+}
+
+"eric".startsWith("e") // true
+"joel".startsWith("f") // false
+
+wordsThatStartWithB(["bob", "sally", "joe"]) // ["bob"]
+wordsThatStartWithB(["banana", "bread", "cheddar"]) // ["banana", "bread"]
+wordsThatStartWithB(["chase", "john", "dave"]) // []
