@@ -18,11 +18,11 @@ function dwarfRollCall(dwarves) {
 
 function summonCaptainPlanet(planeteerCalls) {
 // create an array with variables
-//convert each elemetn to uppercase and add an !
+//convert each element to uppercase and add an !
 // reutrn value as an array
 		var calls = ["apple", "banana", "orange"];
-		return calls.map(function(planeteerCalls) {
-			return planeteerCalls.toUpperCase() + "!";
+		return calls.map(function(ele) {
+			return ele.toUpperCase() + "!";
 		});
 	}
 
@@ -53,7 +53,8 @@ function findTheCheese(foods) {
 var cheese = ["cheddar", "gouda", "camembert"]
 var ingredients = ["garlic", "cheddar", "bread"];
 	 for(var i = 0; i < foods.length; i++) {
-     if(foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert') {
+//created for loop 
+if(foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert') {
       return foods[i];
        }
      }
